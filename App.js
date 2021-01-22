@@ -50,7 +50,7 @@ const App = () => {
       Alert.alert('Error', 'Please type item', [{text: 'ok'}]);
     } else {
       setItems(prevItems => {
-        return [{id: uuid.v1(), text: text}, ...prevItems]; //...prevItems call all the items array
+        return [{id: uuid.v1(), text: text}, ...prevItems]; //...prevItems call all the items array so a new array is formed. Oringal array (...PrevItems + new row)
       });  
     }    
   };
